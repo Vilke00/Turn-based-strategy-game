@@ -1,0 +1,83 @@
+﻿@startuml
+class Form1 {
+    +Form1()
+    -meni: MainMenu
+    -querie: Querie
+}
+class Loot {
+    +Loot()
+    -wh: Wheel_PictureBox
+    -meni: MainMenu
+    -querie: Querie
+}
+class MainMenu {
+    +MainMenu()
+}
+class Ability {
+    +Ability(abilityId: int, abilityName: string, damage: int, energyReq: int)
+    -AbilityId: int
+    -AbilityName: string
+    -Damage: int
+    -EnergyReq: int
+}
+class Armor {
+    +Armor(armorId: int, armorName: string, health: int, shield: int, defense: int)
+    -ArmorId: int
+    -ArmorName: string
+    -Health: int
+    -Shield: int
+    -Defense: int
+}
+class Enchantment {
+    +Enchantment(enchantmentId: int, enchantmentName: string, damage: int, defense: int, luck: int)
+    -EnchantmentId: int
+    -EnchantmentName: string
+    -Damage: int
+    -Defense: int
+    -Luck: int
+}
+class Enemy {
+    +Enemy(tier: int, pbEnemy: PictureBox)
+    -Health: int
+    -Shield: int
+    -Damage: int
+    -Defense: int
+    -Luck: int
+    -Energy: int
+    -Tier: int
+    -MakeEnemy(pbEnemy: PictureBox)
+}
+class Player {
+    +Player(characterName: string, health: int, shield: int, damage: int, defense: int, luck: int, energy: int)
+    -CharacterName: string
+    -Health: int
+    -Shield: int
+    -Damage: int
+    -Defense: int
+    -Luck: int
+    -Energy: int
+}
+class Querie {
+    +Querie(upit: string, o: object)
+    -Upit: string
+    -o: object
+}
+class Stats {
+    +Stats(statId: int, characterName: string, enchantmentId: int, armorId: int, abilityId: int)
+    -StatId: int
+    -CharacterName: string
+    -EnchantmentId: int
+    -ArmorId: int
+    -AbilityId: int
+}
+Form1 --> MainMenu
+Form1 --> Querie
+Loot --> MainMenu
+Loot --> Querie
+Form1 --> Stats
+Form1 --> Player
+Form1 --> Enemy
+Form1 --> Enchantment
+Form1 --> Armor
+Form1 --> Ability
+@enduml

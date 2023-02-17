@@ -1,0 +1,7 @@
+
+Xcsharpsquid:S3010"";Remove this assignment of 'wh' or initialize it statically.(™Ò†™
+_csharpsquid:S3010#"=Remove this assignment of 'meni' or initialize it statically.(½†Î™úÿÿÿÿ
+acsharpsquid:S3010$"?Remove this assignment of 'querie' or initialize it statically.(¢å©ßýÿÿÿÿ
+rcsharpsquid:S2696l"UMake the enclosing instance method 'static' or remove this set on the 'static' field.(ƒÍñà
+wcsharpsquid:S2696w"UMake the enclosing instance method 'static' or remove this set on the 'static' field.(½†Î™úÿÿÿÿ
+Ycsharpsquid:S1117k"<Rename 'spinWheel' which hides the field with the same name.(Óóã¬

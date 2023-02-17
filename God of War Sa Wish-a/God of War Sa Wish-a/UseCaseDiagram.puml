@@ -1,0 +1,14 @@
+﻿@startuml
+left to right direction
+actor Player
+
+usecase "Main menu"
+usecase "Start game"
+usecase "Perform player actions"
+usecase "Loot chest"
+
+Player --> "Main menu"
+Player --> "Start game"
+Player --> "Perform player actions"
+Player --> "Loot chest"
+@enduml
